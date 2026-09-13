@@ -637,6 +637,7 @@ A network is not just a group of connected computers. It is a system of devices,
 الشبكة ليست مجرد مجموعة من أجهزة الكمبيوتر المتصلة ببعضها، وإنما هي نظام يتكون من أجهزة ومعدات شبكات ووسائل اتصال وبروتوكولات وخدمات تعمل معًا من أجل تبادل البيانات.
 
 > **Understand → Build → Test → Troubleshoot → Repeat**
+> 
 **افهم → ابنِ → جرّب → حل المشاكل → كرر**
 
 <br><br>
