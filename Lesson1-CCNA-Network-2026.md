@@ -643,10 +643,8 @@ A network is not just a group of connected computers. It is a system of devices,
 <br><br>
 ## شرح مُبسط اكتر بالعاميه 
 
--- 
 <div dir="rtl">
 
-# Introduction to Networks
 
 لما يكون عندك أكتر من جهاز وعايز الأجهزة دي تتواصل مع بعض، هنا بيظهر مفهوم الـ **Network**.
 
