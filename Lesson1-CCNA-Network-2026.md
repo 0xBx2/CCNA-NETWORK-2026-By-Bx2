@@ -641,5 +641,156 @@ A network is not just a group of connected computers. It is a system of devices,
 **افهم → ابنِ → جرّب → حل المشاكل → كرر**
 
 <br><br>
+## شرح مُبسط اكتر بالعاميه 
 
+-- 
+<div dir="rtl">
+
+# Introduction to Networks
+
+لما يكون عندك أكتر من جهاز وعايز الأجهزة دي تتواصل مع بعض، هنا بيظهر مفهوم الـ **Network**.
+
+الـ Network مش مجرد كابلات متوصلة في أجهزة. هي طريقة بتخلي الأجهزة تقدر تبعت وتستقبل **Data**، وتشارك **Resources**، وتستخدم Services موجودة على أجهزة تانية. ممكن تكون الشبكة بسيطة جدًا، زي الموبايل المتصل بالـ Headphones عن طريق Bluetooth، وممكن تكون ضخمة جدًا وتربط شبكات في دول وقارات مختلفة.
+
+الفكرة الأساسية من وجود الـ Network هي إن الأجهزة ما تشتغلش بشكل منفصل. جهاز يقدر يبعت File لجهاز تاني، مجموعة أجهزة تقدر تستخدم نفس Printer، Users يقدروا يوصلوا لـ Server مركزي، وكل الأجهزة ممكن تشترك في نفس Internet Connection.
+
+## مكونات الـ Network
+
+أي Network هتلاقي فيها 3 حاجات أساسية: أجهزة بتستخدم الشبكة، أجهزة مسؤولة عن تنظيم الاتصال، ووسيلة البيانات اللي بتتحرك من خلالها.
+
+الأجهزة اللي بتستخدم الشبكة نفسها بنسميها **End Devices** أو **Hosts**. ودي زي الـ PC والـ Laptop والـ Smartphone والـ Server والـ Printer وحتى الـ IP Camera. أي Device من دول ممكن يكون مسؤول عن إرسال أو استقبال الـ Data.
+
+في الناحية التانية عندنا **Network Devices**. دي الأجهزة اللي بتساعد الـ End Devices تتواصل مع بعض أو تتعامل مع حركة الـ Data. أشهر الأمثلة عليها هي الـ **Switch** والـ **Router** والـ **Access Point** والـ **Firewall**.
+
+أما الطريقة اللي الـ Data بتنتقل بيها بين الأجهزة فدي اسمها **Transmission Media**. ممكن تكون Wired، زي الـ Ethernet وFiber Optic، أو Wireless، زي Wi-Fi وBluetooth والـ Cellular Networks.
+
+## Switch و Router مش نفس الحاجة
+
+دي من أول الحاجات اللي لازم تفرق بينها كويس في Networking.
+
+الـ **Switch** بيستخدم بشكل أساسي عشان يربط Devices موجودة داخل نفس الـ Network. لما Data توصل للـ Switch، هو بيستخدم **MAC Address** عشان يعرف الـ Device اللي المفروض الـ Ethernet Frame تروح له.
+
+أما الـ **Router** فوظيفته مختلفة. هو بيربط **Different Networks** ببعض وبيحدد الطريق اللي الـ Packet لازم تمشي فيه اعتمادًا على **IP Addresses**.
+
+يعني لو عندك أجهزة في البيت، الـ Switch ممكن يربط الأجهزة ببعض داخل الـ LAN، والـ Router يربط الـ LAN دي بشبكة تانية زي الـ Internet.
+
+والـ **Access Point أو AP** بيدخل في الموضوع لما يكون عندك Wireless Devices. هو بيسمح للموبايلات والـ Laptops مثلًا إنها تدخل على الـ Network عن طريق Wi-Fi بدل الكابل.
+
+أما الـ **Firewall** فدوره أمني. هو بيراقب الـ Network Traffic وبيطبق Rules تحدد إيه مسموح يعدي وإيه المفروض يتمنع.
+
+## حجم الـ Network بيفرق
+
+مش كل Networks بنفس الحجم. ممكن شبكة تكون حوالين شخص واحد، وممكن تغطي مبنى، وممكن تمتد عبر مدينة أو دول وقارات.
+
+الـ **PAN** هي الأصغر، وبتكون مرتبطة بالأجهزة القريبة من شخص واحد. مثال بسيط عليها Smartphone متصل بـ Headphones عن طريق Bluetooth.
+
+الـ **LAN** بتغطي مساحة محدودة زي بيت أو مكتب أو مدرسة أو مبنى. مثلًا:
+
+```text
+PC ─────┐
+Laptop ─┼── Switch
+Printer ┘
+```
+
+كل الأجهزة هنا موجودة في نفس المكان ومتصلة داخل نفس الـ LAN.
+
+الـ **MAN** بتكون أكبر من الـ LAN، وغالبًا بتغطي منطقة على مستوى مدينة. تخيل مثلًا مؤسسة عندها مباني مختلفة في أماكن متفرقة داخل نفس المدينة وعايزة تربطهم مع بعض.
+
+أما الـ **WAN** فبتربط Networks على مسافات كبيرة جدًا. ممكن تربط مدن مختلفة، دول مختلفة، أو حتى قارات.
+
+```text
+LAN ── Router ───── WAN ───── Router ── LAN
+```
+
+والـ Internet يعتبر أشهر مثال على Network ضخمة جدًا بتعمل على مستوى عالمي.
+
+بالتالي تقدر تحفظ الفكرة بالشكل ده:
+
+**PAN → شخص**
+
+**LAN → مكان محدود**
+
+**MAN → مدينة**
+
+**WAN → مسافات كبيرة**
+
+## Client و Server
+
+لما جهاز يطلب حاجة من جهاز تاني، بنسمي الجهاز اللي بيطلب **Client**، والجهاز اللي بيقدم الخدمة **Server**.
+
+مثلًا لما تفتح Website، الـ Browser الموجود على جهازك بيبعت Request إلى الـ Web Server. الـ Server يعالج الـ Request ويرجعلك Response.
+
+```text
+Client ───── Request ─────> Server
+Client <──── Response ──── Server
+```
+
+ومهم تعرف إن الـ Server مش لازم يكون جهاز ضخم بشكل معين. كلمة Server بتوصف الدور اللي الجهاز أو الـ System بيقوم بيه. يعني جهاز ممكن يكون Client في موقف، وServer في موقف تاني.
+
+## طيب إيه الفرق بين P2P والـ Centralized Network؟
+
+في **Peer-to-Peer أو P2P**، الأجهزة بتقدر تتعامل مع بعضها مباشرة من غير ما يكون فيه Server مركزي مخصص لإدارة كل شيء.
+
+كل جهاز ممكن يكون Client وServer في نفس الوقت، وده مناسب أكتر للـ Small Networks اللي مش محتاجة Centralized Management.
+
+لكن في الـ **Centralized Network** بيكون عندك Server مركزي مسؤول عن خدمات وإدارة Resources للأجهزة التانية.
+
+```text
+             Server
+            /  |  \
+           /   |   \
+        PC A  PC B  PC C
+```
+
+الطريقة دي بتكون مناسبة جدًا في الشركات، لأن وجود مكان مركزي للإدارة بيسهل التحكم في Users وPermissions وSecurity والسياسات الخاصة بالشبكة.
+
+## Domain و Workgroup
+
+هنا في نقطة مهمة، الـ **Domain** والـ **Workgroup** مش أنواع Networks زي LAN وWAN. دول طرق مختلفة لإدارة أجهزة Windows.
+
+في الـ **Workgroup** كل Computer بيدير نفسه. الـ Users والـ Passwords والـ Security Settings بتكون موجودة وبتتدار بشكل منفصل على كل جهاز، ومفيش Server مركزي مسؤول عن الشبكة كلها.
+
+أما الـ **Domain** فبيعتمد على Centralized Management. الأجهزة والـ Users بيتداروا من خلال Server اسمه **Domain Controller**.
+
+الـ Domain Controller يقدر يتعامل مع حاجات زي **Authentication** و **Permissions** و **Security Policies** وإدارة الـ Computers والـ Users.
+
+فلو عايز تختصر الفرق:
+
+```text
+Workgroup
+    ↓
+Each computer manages itself
+
+Domain
+    ↓
+Centralized management through a Domain Controller
+```
+
+وده فرق مهم جدًا، لأنك لما تدخل بعد كده في Windows Server وActive Directory هتلاقي فكرة الـ Domain بتتكرر قدامك بشكل كبير.
+
+## الصورة الكاملة
+
+لو جمعنا كل اللي فات في Network واحدة، ممكن يكون شكلها مثلًا:
+
+```text
+             Internet
+                 │
+              Router
+                 │
+              Switch
+          ┌──────┼──────┐
+          │      │      │
+         PC    Server  Printer
+```
+
+الـ PC والـ Server والـ Printer هنا **End Devices**.
+
+الـ Switch والـ Router هما **Network Devices**.
+
+والكابلات اللي بتوصل الأجهزة ببعض هي **Transmission Media**.
+
+الفكرة كلها إن كل جزء له دور محدد، وكل الأجزاء دي بتشتغل مع بعض عشان الـ Data تنتقل من مكان لمكان.
+
+وده بالضبط اللي هنبدأ نبني عليه باقي الـ Networking. بعد كده مش هيكون تركيزنا على حفظ تعريفات منفصلة، لكن هنبدأ نفهم الـ Data بتتحرك إزاي، مين بيحدد مكانها، وإزاي الأجهزة المختلفة بتعرف تتعامل مع بعض.
+<br><br>
 <h1 align="center">BY Bx2 ❤️.</h1>
