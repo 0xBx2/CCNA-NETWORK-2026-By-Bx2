@@ -1,5 +1,8 @@
+<img src="https://raw.githubusercontent.com/0xBx2/CCNA-NETWORK-2026-By-Bx2/main/Assets/Network-Fundamentals-By-Bx2.jpg">
 
----
+___
+<br>
+
 # What is a Network?
 
 ## ما هي الشبكة ؟
