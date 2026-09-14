@@ -642,7 +642,7 @@ A network is not just a group of connected computers. It is a system of devices,
 
 <br><br>
 ## شرح مُبسط اكتر بالعاميه 
-
+___
 <div dir="rtl">
 
 
